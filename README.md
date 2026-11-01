@@ -1,7 +1,10 @@
-# NetSerializer - A fast, simple serializer for .Net
+# SpaceWizards.NetSerializer - A fast, simple serializer for .Net
 
-NetSerializer is a simple and very fast serializer for .Net languages. It is
-the fastest serializer I have found for my use cases.
+SpaceWizards.NetSerializer is the Space Wizards fork of
+[NetSerializer](https://github.com/tomba/netserializer) by Tomi Valkeinen.
+
+NetSerializer is a simple and very fast serializer for .Net languages, aimed at
+sending data over the network.
 
 The main pros of NetSerializer are:
 
@@ -25,7 +28,7 @@ serialized.
 This means that it's a bad idea to save the serialized data for longer periods
 of time, as a version upgrade could make the data non-deserializable.
 
-For this reason I think the best (and perhaps only) use for NetSerializer is
+For this reason the best (and perhaps only) use for NetSerializer is
 for sending data over network, between a client and a server which have
 verified version compatibility when the connection is made.
 
@@ -37,12 +40,6 @@ See [Documentation](Doc.md) page.
 
 See [Performance](Performance.md) page.
 
-## Donations
+## License
 
-If you feel NetSerializer is a great piece of software and the author deserves
-some beer money, you can donate with bitcoin.
-
-Bitcoin: 13YgwAye9Uz85xzjZXV4Son9uA6Kwy1ZAa
-
-If you don't have bitcoins or don't want to donate money, you can also just
-send an email telling me what you think of NetSerializer and how you use it.
+MPL-2.0, see [LICENSE](LICENSE). Original work copyright Tomi Valkeinen.
