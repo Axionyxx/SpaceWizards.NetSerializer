@@ -2,11 +2,11 @@ name: Build & Test
 
 on:
   push:
-    branches: [robust]
+    branches: [master]
   merge_group:
   pull_request:
     types: [ opened, reopened, synchronize, ready_for_review ]
-    branches: [robust]
+    branches: [master]
   workflow_dispatch:
 
 concurrency:
