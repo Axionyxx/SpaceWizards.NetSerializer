@@ -110,11 +110,13 @@ namespace NetSerializer.UnitTests
 			Assert.That(allocated, Is.LessThan(1_000_000));
 		}
 
+#pragma warning disable CS0649
 		[Serializable]
 		struct WideNullable
 		{
 			public long? A, B, C, D, E, F, G, H;
 		}
+#pragma warning restore CS0649
 
 		static MemoryStream ZeroElements(int count)
 		{
